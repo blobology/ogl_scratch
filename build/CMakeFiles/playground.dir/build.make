@@ -112,6 +112,7 @@ playground: /usr/lib/x86_64-linux-gnu/libGL.so
 playground: /usr/lib/x86_64-linux-gnu/libGLU.so
 playground: external/glfw-3.1.2/src/libglfw3.a
 playground: external/libGLEW_1130.a
+playground: libImGui.a
 playground: /usr/lib/x86_64-linux-gnu/librt.so
 playground: /usr/lib/x86_64-linux-gnu/libm.so
 playground: /usr/lib/x86_64-linux-gnu/libX11.so

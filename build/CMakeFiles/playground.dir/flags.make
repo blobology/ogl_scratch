@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGLEW_STATIC -DTW_NO_DIRECT3D -DTW_NO_LIB_PRAGMA -DTW_STATIC -D_CRT_SECURE_NO_WARNINGS
 
-CXX_INCLUDES = -I/home/rob/src/ogl_scratch/external/AntTweakBar-1.16/include -I/home/rob/src/ogl_scratch/external/glfw-3.1.2/include -I/home/rob/src/ogl_scratch/external/glm-0.9.7.1 -I/home/rob/src/ogl_scratch/external/glew-1.13.0/include -I/home/rob/src/ogl_scratch/external/assimp-3.0.1270/include -I/home/rob/src/ogl_scratch/external/bullet-2.81-rev2613/src -I/home/rob/src/ogl_scratch/.
+CXX_INCLUDES = -I/home/rob/src/ogl_scratch/external/AntTweakBar-1.16/include -I/home/rob/src/ogl_scratch/external/glfw-3.1.2/include -I/home/rob/src/ogl_scratch/external/glm-0.9.7.1 -I/home/rob/src/ogl_scratch/external/glew-1.13.0/include -I/home/rob/src/ogl_scratch/external/assimp-3.0.1270/include -I/home/rob/src/ogl_scratch/external/bullet-2.81-rev2613/src -I/home/rob/src/ogl_scratch/external/imgui -I/home/rob/src/ogl_scratch/external/imgui/backends -I/home/rob/src/ogl_scratch/.
 
 CXX_FLAGS = 
 

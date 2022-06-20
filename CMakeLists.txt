@@ -4,6 +4,14 @@ project (Tutorials)
 
 find_package(OpenGL REQUIRED)
 
+set(IMGUI_PATH "/home/rob/src/ogl_scratch/external/imgui")
+set(IMGUI_BACKENDS_PATH "/home/rob/src/ogl_scratch/external/imgui/backends")
+
+# Compile as static library 
+file(GLOB IMGUI_SOURCES ${IMGUI_PATH}/*.cpp ${IMGUI_BACKENDS_PATH}/*.cpp) 
+add_library("ImGui" STATIC ${IMGUI_SOURCES})
+target_include_directories("ImGui" PUBLIC ${IMGUI_PATH} ${IMGUI_BACKENDS_PATH})
+
 
 if( CMAKE_BINARY_DIR STREQUAL CMAKE_SOURCE_DIR )
     message( FATAL_ERROR "Please select another Build Directory ! (and give it a clever name, like bin_Visual2012_64bits/)" )
@@ -39,6 +47,8 @@ include_directories(
 	external/glew-1.13.0/include/
 	external/assimp-3.0.1270/include/
 	external/bullet-2.81-rev2613/src/
+	external/imgui/
+	external/imgui/backends/
 	.
 )
 
@@ -46,6 +56,7 @@ set(ALL_LIBS
 	${OPENGL_LIBRARY}
 	glfw
 	GLEW_1130
+	ImGui
 )
 
 add_definitions(
